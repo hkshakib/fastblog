@@ -9,9 +9,8 @@ class Post(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "title": "Securing FastAPI applications with JWT.",
-                "content": "In this tutorial, you'll learn how to secure your application by enabling authentication "
-                           "using JWT. We'll be using PyJWT to sign, encode and decode JWT tokens.... "
+                "title": "exampl title",
+                "content": "this is the example content"
             }
         }
 
@@ -24,9 +23,9 @@ class User(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "fullname": "Joe Doe",
-                "email": "joe@xyz.com",
-                "password": "any"
+                "fullname": "Shakib",
+                "email": "shakib@gmail.com",
+                "password": "12345678"
             }
         }
 
@@ -38,7 +37,7 @@ class UserLogin(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "email": "joe@xyz.com",
-                "password": "any"
+                "email": "shakib@gmail.com",
+                "password": "12345678"
             }
         }
