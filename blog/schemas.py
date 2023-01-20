@@ -2,7 +2,9 @@ from pydantic import BaseModel, Field
 
 
 class PostSchemas(BaseModel):
-    title: str = Field(...)
-    content: str = Field(...)
+    title: str
+    content: str
 
 
+class PostCreate(PostSchemas):
+    pass

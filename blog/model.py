@@ -3,7 +3,7 @@ from database import Base
 
 
 class Post(Base):
-    __tablename__ = 'items'
+    __tablename__ = 'posts'
     id = Column(Integer, primary_key=True)
     title = Column(String(256))
     content = Column(String(256))
